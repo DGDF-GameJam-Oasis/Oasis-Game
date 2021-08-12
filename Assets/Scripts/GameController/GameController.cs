@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
     void Start()
     {
         TimerController.Instance.BeginTimer();
+        CountdownTimer.Instance.BeginCountdown(40f);
+        
     }
 
     // Update is called once per frame
