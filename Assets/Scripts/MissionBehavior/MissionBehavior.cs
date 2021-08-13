@@ -17,11 +17,15 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update, set the proper variables for the mission
     void Start()
     {
-        setMissionDetails();
-        setMissionTimeType();
+        // Variable needed here
+        // setMissionDetails();
+        
+        // Variable needed here
+        // setMissionTimeType();
         if (timedMission)
         {
-            setTime();
+            // Variable needed here
+            // setTime();
         }
     }
 

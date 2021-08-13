@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCBehavior : MonoBehaviour
-
+{
     //Variables for the NPC
     private string npcName;
     private string npcMissionDialogue;
     private string npcMissionCompleteDialogue;
     private string missionName;
-{
     // Start is called before the first frame update
     void Start()
     {
-        setVariables();
+        // Variables needed here
+        // setVariables();
     }
 
     // Update is called once per frame
@@ -26,8 +26,7 @@ public class NPCBehavior : MonoBehaviour
     {
         npcName = name;
         npcMissionDialogue = startDialogue;
-        npcMissionCompleteDialogue = endDialogue
-        misisonName = mission;
-
+        npcMissionCompleteDialogue = endDialogue;
+        missionName = mission;
     }
 }

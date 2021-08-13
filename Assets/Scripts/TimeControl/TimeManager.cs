@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TimerController : MonoBehaviour
+public class TimeManager : MonoBehaviour
 {
-    public static TimerController Instance;
+    public static TimeManager Instance;
     
     public Text TimerCounter;
     private TimeSpan RunningTime;

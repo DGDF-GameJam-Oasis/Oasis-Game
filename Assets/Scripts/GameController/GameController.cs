@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TimerController.Instance.BeginTimer();
+        TimeManager.Instance.BeginTimer();
         CountdownTimer.Instance.BeginCountdown(40f);
         
     }
