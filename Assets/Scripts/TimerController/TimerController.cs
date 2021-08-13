@@ -10,7 +10,8 @@ public class TimerController : MonoBehaviour
     
     public Text TimerCounter;
     private TimeSpan RunningTime;
-    private bool TimerOn;
+    private bool TimerOn = false;
+    public float TimeMultiplier = 1f;
 
     //To be saved between sessions
     public float ElapsedTime;
@@ -20,14 +21,11 @@ public class TimerController : MonoBehaviour
     }
     void Start()
     {
-        TimerCounter.text = "00:00";
-        TimerOn = false;
-         
+        TimerCounter.text = "00:00:00";
     }
     public void BeginTimer()
     {
         TimerOn = true;
-
         // Update ElapsedTime from locally saved data
         StartCoroutine(UpdateTimer());
     }
@@ -35,14 +33,17 @@ public class TimerController : MonoBehaviour
     {
         TimerOn = false;
     }
-
+    public void AdjustTimeRate(float Multiplier)
+    {
+        TimeMultiplier = Multiplier;
+    }
     private IEnumerator UpdateTimer()
     {
         while (TimerOn)
         {
-            ElapsedTime += Time.deltaTime;
+            ElapsedTime += Time.deltaTime * TimeMultiplier;
             RunningTime = TimeSpan.FromSeconds(ElapsedTime);
-            string RunningTimeStr = RunningTime.ToString("hh':'mm");
+            string RunningTimeStr = RunningTime.ToString("hh':'mm':'ss");
             TimerCounter.text = RunningTimeStr;
             yield return null;
         } 

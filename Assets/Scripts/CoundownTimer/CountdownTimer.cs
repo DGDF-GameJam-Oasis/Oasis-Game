@@ -7,9 +7,9 @@ public class CountdownTimer : MonoBehaviour
 {
     public static CountdownTimer Instance;
     public Text TimerCounter;
-    private float TimerAmount = 0f;
-    private bool TimerOn;
-     private TimeSpan RunningTime;
+    public float TimerAmount = 0f;
+    private bool TimerOn = false;
+    private TimeSpan RunningTime;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -18,13 +18,11 @@ public class CountdownTimer : MonoBehaviour
     void Start()
     {
         TimerCounter.text = TimerAmount.ToString("mm':'ss");
-        TimerOn = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
        public void BeginCountdown(float CountdownAmount)
     {
@@ -40,8 +38,8 @@ public class CountdownTimer : MonoBehaviour
     }
 
     private IEnumerator UpdateTimer()
-    {
-        while (TimerOn && TimerAmount >= 0f)
+    {   
+        while (TimerOn)
         {
             TimerAmount -= Time.deltaTime;
             RunningTime = TimeSpan.FromSeconds(TimerAmount);
