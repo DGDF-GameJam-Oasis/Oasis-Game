@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MissionBehaviourScript : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
 
     string stageType;
@@ -12,20 +12,17 @@ public class MissionBehaviourScript : MonoBehaviour
     bool runningTimer;
     public float timeAvailable;
     bool updateTimer;
+    float time;
 
 
     // Start is called before the first frame update, set the proper variables for the mission
     void Start()
     {
-        // Variable needed here
-        // setMissionDetails();
-        
-        // Variable needed here
-        // setMissionTimeType();
+        setMissionDetails(missionDetails);
+        setMissionTimeType(updateTimer);
         if (timedMission)
         {
-            // Variable needed here
-            // setTime();
+            setTime(time);
         }
     }
 
