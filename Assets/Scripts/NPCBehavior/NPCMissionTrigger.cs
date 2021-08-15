@@ -8,6 +8,6 @@ public class NPCMissionTrigger : MonoBehaviour
 
     public void Talk()
     {
-        FindObjectOfType<NPCBehavior>().startMission(mission);
+        FindObjectOfType<NPCBehavior>().StartMission(mission);
     }
 }

@@ -35,10 +35,11 @@ public class NPCBehavior : MonoBehaviour
 
     void OnMouseDown()
     {
-        startMission(mission);
+        //DisplayMission
+        StartMission(mission);
     }
 
-    public void startMission(NPCTextLogic missionText)
+    public void StartMission(NPCTextLogic missionText)
     {
         Debug.Log(missionText.name + ":" + missionText.missionStartDialogue);
         Debug.Log(missionText.name + ":" + missionText.missionCompleteDialogue);
