@@ -11,7 +11,8 @@ public class TimeManager : MonoBehaviour
     public Text TimerCounter;
     private TimeSpan RunningTime;
     private bool TimerOn = false;
-    public float TimeMultiplier = 1f;
+    public float PremiumMultiplier = 1f;
+    private float DefaultTimeRate = 3f;
 
     //To be saved between sessions
     public float ElapsedTime;
@@ -35,13 +36,14 @@ public class TimeManager : MonoBehaviour
     }
     public void AdjustTimeRate(float Multiplier)
     {
-        TimeMultiplier = Multiplier;
+        Debug.Log("Updated TimeRate");
+        PremiumMultiplier = Multiplier;
     }
     private IEnumerator UpdateTimer()
     {
         while (TimerOn)
         {
-            ElapsedTime += Time.deltaTime * TimeMultiplier;
+            ElapsedTime += Time.deltaTime * DefaultTimeRate * PremiumMultiplier;
             RunningTime = TimeSpan.FromSeconds(ElapsedTime);
             string RunningTimeStr = RunningTime.ToString("hh':'mm':'ss");
             TimerCounter.text = RunningTimeStr;
