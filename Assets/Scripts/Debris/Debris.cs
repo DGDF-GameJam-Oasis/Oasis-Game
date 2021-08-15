@@ -10,6 +10,10 @@ public class Debris : MonoBehaviour
     int debrisID;
     string debrisDesc;
 
+    public float fadeOutSpeed = 0.8f;
+    private bool fadedOut = false;
+    private bool cleared = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +23,33 @@ public class Debris : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(cleared)
+        {
+            ClearDebris();
+        }
     }
 
+    private void OnMouseDown()
+    {
+        cleared = true;
+    }
+
+    private void ClearDebris()
+    {
+        if(!fadedOut)
+        {
+            Color objectColor = this.GetComponent<Renderer>().material.color;
+            float fadeAmount = objectColor.a - (fadeOutSpeed * Time.deltaTime);
+
+            objectColor.a = fadeAmount;
+            this.GetComponent<Renderer>().material.color = objectColor;
+            if (objectColor.a <= 0)
+            {
+                fadedOut = true;
+                Destroy(gameObject);
+            }
+        }
+    }
     void SetVariables()
     {
 
