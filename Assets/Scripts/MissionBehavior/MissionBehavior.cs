@@ -30,18 +30,18 @@ public class MissionBehaviourScript : MonoBehaviour
     }
 
     //Set the available time for the mission
-    private void setTime(float timer)
+    private void SetTime(float timer)
     {
         timeAvailable = timer;
     }
 
     //Set the mission details for the mission
-    private void setMissionDetails(string details)
+    private void SetMissionDetails(string details)
     {
         missionDetails = details;
     }
     //Determine if the mission is timed or not.
-    private void setMissionTimeType(bool timeType)
+    private void SetMissionTimeType(bool timeType)
     {
         timedMission = timeType;
         runningTimer = timeType;

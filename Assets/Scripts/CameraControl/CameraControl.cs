@@ -5,8 +5,8 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     [SerializeField]
-    private Camera Cam;
-    private Vector3 DragOrigin;
+    private Camera cam;
+    private Vector3 dragOrigin;
 
     private void Update()
     {
@@ -17,12 +17,12 @@ public class CameraControl : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            DragOrigin = Cam.ScreenToWorldPoint(Input.mousePosition);
+            dragOrigin = cam.ScreenToWorldPoint(Input.mousePosition);
         }
         if(Input.GetMouseButton(0))
         {
-            Vector3 Difference = DragOrigin - Cam.ScreenToWorldPoint(Input.mousePosition);
-            Cam.transform.position += Difference;
+            Vector3 difference = dragOrigin - cam.ScreenToWorldPoint(Input.mousePosition);
+            cam.transform.position += difference;
         }
     }
 }

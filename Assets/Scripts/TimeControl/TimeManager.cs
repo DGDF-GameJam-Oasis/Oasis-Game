@@ -6,47 +6,47 @@ using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
-    public static TimeManager Instance;
+    public static TimeManager instance;
     
-    public Text TimerCounter;
-    private TimeSpan RunningTime;
-    private bool TimerOn = false;
-    public float PremiumMultiplier = 1f;
-    private float DefaultTimeRate = 3f;
+    public Text timerCounter;
+    private TimeSpan runningTime;
+    private bool timerOn = false;
+    private float premiumMultiplier = 1f;
+    private float defaultTimeRate = 3f;
 
     //To be saved between sessions
-    public float ElapsedTime;
+    public float elapsedTime;
     private void Awake()
     {
-        Instance = this;
+        instance = this;
     }
     void Start()
     {
-        TimerCounter.text = "00:00:00";
+        timerCounter.text = "00:00:00";
     }
     public void BeginTimer()
     {
-        TimerOn = true;
+        timerOn = true;
         // Update ElapsedTime from locally saved data
         StartCoroutine(UpdateTimer());
     }
     public void EndTimer()
     {
-        TimerOn = false;
+        timerOn = false;
     }
-    public void AdjustTimeRate(float Multiplier)
+    public void AdjustTimeRate(float multiplier)
     {
         Debug.Log("Updated TimeRate");
-        PremiumMultiplier = Multiplier;
+        premiumMultiplier = multiplier;
     }
     private IEnumerator UpdateTimer()
     {
-        while (TimerOn)
+        while (timerOn)
         {
-            ElapsedTime += Time.deltaTime * DefaultTimeRate * PremiumMultiplier;
-            RunningTime = TimeSpan.FromSeconds(ElapsedTime);
-            string RunningTimeStr = RunningTime.ToString("hh':'mm':'ss");
-            TimerCounter.text = RunningTimeStr;
+            elapsedTime += Time.deltaTime * defaultTimeRate * premiumMultiplier;
+            runningTime = TimeSpan.FromSeconds(elapsedTime);
+            string runningTimeStr = runningTime.ToString("hh':'mm':'ss");
+            timerCounter.text = runningTimeStr;
             yield return null;
         } 
     }

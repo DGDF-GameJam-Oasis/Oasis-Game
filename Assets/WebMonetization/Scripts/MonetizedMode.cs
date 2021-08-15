@@ -14,9 +14,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MonetizedMode : MonoBehaviour
-{
-    public float PremiumMode = 5f;
-    public float NormalMode = 1f;
+{    public float premiumMode = 5f;
+    public float normalMode = 1f;
     // register one or both events if you want to use them
     void OnEnable()
     {
@@ -32,7 +31,7 @@ public class MonetizedMode : MonoBehaviour
         WMBroadcaster.OnMonetizationStart -= OnMonetizationStart;
         WMBroadcaster.OnMonetizationProgress -= OnMonetizationProgress;
 
-        TimeManager.Instance.AdjustTimeRate(NormalMode);
+        TimeManager.instance.AdjustTimeRate(normalMode);
     }
 
     // A monetization start event should occur roughly after a second or two after your game loads as WebGL.
@@ -50,7 +49,7 @@ public class MonetizedMode : MonoBehaviour
         // Debug.Log("MonetizationStart requestId: " + requestId + ", id: " + id + ", resolvedEndpoint: " + resolvedEndpoint + ", metaContent" + metaContent);
 
         // Debug.Log("MonetizationStart");
-        TimeManager.Instance.AdjustTimeRate(PremiumMode);
+        TimeManager.instance.AdjustTimeRate(premiumMode);
     }
 
     // A monetization progress event should occur roughly every two seconds after the monetization progress occurs
