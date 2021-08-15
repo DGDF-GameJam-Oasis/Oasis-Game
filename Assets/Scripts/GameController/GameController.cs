@@ -7,8 +7,8 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TimeManager.Instance.BeginTimer();
-        CountdownTimer.Instance.BeginCountdown(40f);
+        TimeManager.instance.BeginTimer();
+        CountdownTimer.instance.BeginCountdown(40f);
         // GetComponent<MonetizedMode>().enabled = false;
 
         

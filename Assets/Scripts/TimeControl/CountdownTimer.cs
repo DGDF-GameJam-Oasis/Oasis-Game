@@ -5,46 +5,46 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CountdownTimer : MonoBehaviour
 {
-    public static CountdownTimer Instance;
-    public Text TimerCounter;
-    public float TimerAmount = 0f;
-    private bool TimerOn = false;
-    private TimeSpan RunningTime;
+    public static CountdownTimer instance;
+    public Text timerCounter;
+    public float timerAmount = 0f;
+    private bool timerOn = false;
+    private TimeSpan runningTime;
     // Start is called before the first frame update
     private void Awake()
     {
-        Instance = this;
+        instance = this;
     }
     void Start()
     {
-        TimerCounter.text = TimerAmount.ToString("mm':'ss");
+        timerCounter.text = timerAmount.ToString("mm':'ss");
     }
 
     // Update is called once per frame
     void Update()
     {
     }
-       public void BeginCountdown(float CountdownAmount)
+       public void BeginCountdown(float countdownAmount)
     {
-        TimerAmount = CountdownAmount;
-        TimerOn = true;
+        timerAmount = countdownAmount;
+        timerOn = true;
 
         // Update ElapsedTime from locally saved data
         StartCoroutine(UpdateTimer());
     }
     public void EndCountdown()
     {
-        TimerOn = false;
+        timerOn = false;
     }
 
     private IEnumerator UpdateTimer()
     {   
-        while (TimerOn)
+        while (timerOn)
         {
-            TimerAmount -= Time.deltaTime;
-            RunningTime = TimeSpan.FromSeconds(TimerAmount);
-            string RunningTimeStr = RunningTime.ToString("mm':'ss");
-            TimerCounter.text = "Time left: " + RunningTimeStr;
+            timerAmount -= Time.deltaTime;
+            runningTime = TimeSpan.FromSeconds(timerAmount);
+            string runningTimeStr = runningTime.ToString("mm':'ss");
+            timerCounter.text = "Time left: " + runningTimeStr;
             yield return null;
         } 
     }

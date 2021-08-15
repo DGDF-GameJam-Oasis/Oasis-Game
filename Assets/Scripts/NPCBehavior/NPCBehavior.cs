@@ -25,7 +25,7 @@ public class NPCBehavior : MonoBehaviour
 
     }
 
-    public void setVariables(string name, string startDialogue, string endDialogue, string mission)
+    public void SetVariables(string name, string startDialogue, string endDialogue, string mission)
     {
         npcName = name;
         npcMissionDialogue = startDialogue;

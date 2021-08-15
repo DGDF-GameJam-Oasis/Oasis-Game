@@ -22,7 +22,7 @@ public class Debris : MonoBehaviour
         
     }
 
-    void setVariables()
+    void SetVariables()
     {
 
     }

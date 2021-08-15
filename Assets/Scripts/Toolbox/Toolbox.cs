@@ -21,7 +21,7 @@ public class Toolbox : MonoBehaviour
     void Start()
     {
 
-        setVariables(tempName, desc, id);
+        SetVariables(tempName, desc, id);
     }
 
     // Update is called once per frame
@@ -30,25 +30,25 @@ public class Toolbox : MonoBehaviour
         
     }
 
-    void setVariables(string name, string desc, int ID)
+    void SetVariables(string name, string desc, int ID)
     {
         toolName = name;
         toolDescription = desc;
         int toolId = ID;
     }
 
-    void selectTool()
+    void SelectTool()
     {
         //TODO: Select a tool from a toolbox by clicking it
     }
 
-    void useTool()
+    void UseTool()
     {
         //TODO Set it so that when a tool is used that it checks whether the ID matches the debris that it's being used on. 
         //We'll likely have another means of destroying an instance of a 
     }
 
-    void destroyDebris()
+    void DestroyDebris()
     {
         //Remove debris from a location based on the tool being used, if it matches the debris will be removed.  Otherwise it'll stay there, possible add in an error message of some sort.
     }
