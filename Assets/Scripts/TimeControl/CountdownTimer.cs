@@ -45,6 +45,11 @@ public class CountdownTimer : MonoBehaviour
             runningTime = TimeSpan.FromSeconds(timerAmount);
             string runningTimeStr = runningTime.ToString("mm':'ss");
             timerCounter.text = "Time left: " + runningTimeStr;
+
+            if(timerAmount<= 0)
+            {
+                timerOn = false;
+            }
             yield return null;
         } 
     }
