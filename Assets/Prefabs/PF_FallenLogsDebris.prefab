@@ -17,7 +17,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.36, y: 5.12}
+    oldSize: {x: 2.73, y: 1.03}
     newSize: {x: 3.36, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -33,6 +33,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3620188154289724002, guid: b7f84c8e09aac094591f5c2990edd34c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.73
+      objectReference: {fileID: 0}
+    - target: {fileID: -3620188154289724002, guid: b7f84c8e09aac094591f5c2990edd34c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 32577254522971802, guid: b7f84c8e09aac094591f5c2990edd34c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b8b646142a427f14fb1e8439ae7e2803, type: 3}
+    - target: {fileID: 32577254522971802, guid: b7f84c8e09aac094591f5c2990edd34c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2048238552751691045, guid: b7f84c8e09aac094591f5c2990edd34c, type: 3}
       propertyPath: debrisDesc
       value: A fallen log debris
