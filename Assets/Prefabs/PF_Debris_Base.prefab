@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2048238552751691045}
   - component: {fileID: -3620188154289724002}
   m_Layer: 0
-  m_Name: PF_Debris
+  m_Name: PF_Debris_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
