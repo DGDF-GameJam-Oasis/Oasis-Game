@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    public static GameController gameControllerInstance;
+
+
+    private void Awake() 
+    {
+        gameControllerInstance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {

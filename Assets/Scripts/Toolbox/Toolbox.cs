@@ -33,6 +33,8 @@ public class Toolbox : MonoBehaviour
         }
         lastSelectedTool = selectedTool;
         activeTool = activatedTool;
+
+        
     }
 
     // Start is called before the first frame update

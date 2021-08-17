@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Debris : MonoBehaviour
 {
-
     //Variables
     public string debrisName;
     public int requiredToolID;

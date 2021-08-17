@@ -19,7 +19,6 @@ public class CountdownTimer : MonoBehaviour
     {
         timerCounter.text = timerAmount.ToString("mm':'ss");
     }
-
     // Update is called once per frame
     void Update()
     {
