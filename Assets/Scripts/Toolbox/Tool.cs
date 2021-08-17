@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Tool : MonoBehaviour
 {
+    public static string Name;
     //Variables
     public string toolName;
     public int toolID;
