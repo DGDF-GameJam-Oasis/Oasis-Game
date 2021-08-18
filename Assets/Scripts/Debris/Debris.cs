@@ -5,22 +5,18 @@ using UnityEngine;
 public class Debris : MonoBehaviour
 {
     //Variables
-    [FMODUnity.EventRef]
-    public string selectSound;
-    FMOD.Studio.EventInstance soundEvent;
     public string debrisName;
     public int requiredToolID;
     public string debrisDesc;
 
-    public float fadeOutSpeed = 2.0f;
+    public float fadeOutSpeed = 0.8f;
     private bool fadedOut = false;
     private bool cleared = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Create  Event");
-        soundEvent = FMODUnity.RuntimeManager.CreateInstance(selectSound);
+        
     }
 
     // Update is called once per frame
@@ -29,12 +25,6 @@ public class Debris : MonoBehaviour
         if(cleared)
         {
             ClearDebris();
-        }
-        int position;
-        soundEvent.getTimelinePosition(out position);
-        if(position >= 490)
-        {
-            soundEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
     }
 
@@ -46,8 +36,6 @@ public class Debris : MonoBehaviour
             Debug.Log("Wrong Tool!");
             return;
         }
-        soundEvent.start();
-        // Playsound();
         cleared = true;
     }
 
@@ -60,15 +48,9 @@ public class Debris : MonoBehaviour
 
             objectColor.a = fadeAmount;
             this.GetComponent<Renderer>().material.color = objectColor;
-            // if (objectColor.a <= 0.5)
-            // {
-                
-            // }
             if (objectColor.a <= 0)
             {
                 fadedOut = true;
-                soundEvent.release();
-                soundEvent.clearHandle();
                 Destroy(gameObject);
             }
         }

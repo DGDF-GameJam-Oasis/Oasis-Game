@@ -97,11 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e564786c9a058714380723d612d6cfd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectSound: event:/UI/Clear Debris
-  debrisName: 
-  requiredToolID: 0
-  debrisDesc: 
-  fadeOutSpeed: 0.8
 --- !u!61 &-3620188154289724002
 BoxCollider2D:
   m_ObjectHideFlags: 0

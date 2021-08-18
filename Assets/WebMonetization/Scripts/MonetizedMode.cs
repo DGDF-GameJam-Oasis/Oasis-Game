@@ -23,6 +23,7 @@ public class MonetizedMode : MonoBehaviour
     // register one or both events if you want to use them
     void OnEnable()
     {
+        Debug.Log("Enabling");
         WMBroadcaster.OnMonetizationStart += OnMonetizationStart;
         WMBroadcaster.OnMonetizationProgress += OnMonetizationProgress;
     }
@@ -30,6 +31,7 @@ public class MonetizedMode : MonoBehaviour
     // unregister events that you've registered
     void OnDisable()
     {
+        Debug.Log("Disabling");
         WMBroadcaster.OnMonetizationStart -= OnMonetizationStart;
         WMBroadcaster.OnMonetizationProgress -= OnMonetizationProgress;
 
