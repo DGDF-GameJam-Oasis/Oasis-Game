@@ -82843,7 +82843,7 @@ MonoBehaviour:
   toolName: 
   toolID: 1
   toolDescription: You can use this to clear trees!
-  newCursor: {fileID: 2800000, guid: 47b0b78d15ffea04ab0e8da9b61f79c5, type: 3}
+  newCursor: {fileID: 2800000, guid: 75df4f80c843bc342a16580706d96a15, type: 3}
 --- !u!114 &1784905190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83105,7 +83105,7 @@ MonoBehaviour:
   toolName: 
   toolID: 0
   toolDescription: You can use this to clear boulders!
-  newCursor: {fileID: 2800000, guid: 75df4f80c843bc342a16580706d96a15, type: 3}
+  newCursor: {fileID: 2800000, guid: 47b0b78d15ffea04ab0e8da9b61f79c5, type: 3}
 --- !u!1 &1955015637
 GameObject:
   m_ObjectHideFlags: 0
@@ -83474,8 +83474,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b27691cb4ea8d7c4fb66ec1053fe3ce5, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 3fb0d331758f33c4e9d03070cdc60d6b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
