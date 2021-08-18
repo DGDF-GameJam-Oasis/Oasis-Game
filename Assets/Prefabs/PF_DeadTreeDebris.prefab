@@ -16,6 +16,10 @@ PrefabInstance:
       value: Dead Tree
       objectReference: {fileID: 0}
     - target: {fileID: 2048238552751691045, guid: b7f84c8e09aac094591f5c2990edd34c, type: 3}
+      propertyPath: selectSound
+      value: event:/UI/Clear Debris
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048238552751691045, guid: b7f84c8e09aac094591f5c2990edd34c, type: 3}
       propertyPath: requiredToolID
       value: 1
       objectReference: {fileID: 0}
