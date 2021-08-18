@@ -46,6 +46,7 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+<<<<<<< Updated upstream
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
@@ -57,3 +58,5 @@
 [LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
 [LOG] Thread::callback                         : FMOD file thread finished.
+=======
+>>>>>>> Stashed changes

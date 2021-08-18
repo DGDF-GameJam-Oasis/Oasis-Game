@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:Assets/Plugins/FMOD/lib/mac/fmodstudioL.bundle/Contents/Info.plist.meta
 guid: 723c20710e6075749ac3ae1d45f111e3
+=======
+guid: 62a74dc22a425494ca3c60f6013baeb1
+>>>>>>> Stashed changes:Assets/Plugins/FMOD/lib/mac/fmodstudio.bundle/Contents/Info.plist.meta
+=======
+guid: 723c20710e6075749ac3ae1d45f111e3
+>>>>>>> Stashed changes
 DefaultImporter:
   externalObjects: {}
   userData: 
