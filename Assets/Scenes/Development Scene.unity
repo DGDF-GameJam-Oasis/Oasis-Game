@@ -291,6 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   premiumMode: 0.5
   normalMode: 1
+  monetizationCounter: {fileID: 0}
 --- !u!114 &85842618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81851,10 +81852,10 @@ RectTransform:
   m_Father: {fileID: 1819409668}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.5, y: 0.36}
+  m_AnchorMax: {x: 0.5, y: 0.36}
+  m_AnchoredPosition: {x: 5, y: 25}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711982365
 MonoBehaviour:
@@ -81871,7 +81872,6 @@ MonoBehaviour:
   toolName: 
   toolID: 3
   toolDescription: You can use this to plant grass!
-  newCursor: {fileID: 0}
 --- !u!114 &711982366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81948,8 +81948,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b27691cb4ea8d7c4fb66ec1053fe3ce5, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bed3bcc3a0c254441b46421184978ca6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -81999,10 +81999,10 @@ RectTransform:
   m_Father: {fileID: 1955015641}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -345.45, y: 0}
-  m_SizeDelta: {x: -690.8947, y: 0.000030518}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.000030518}
+  m_SizeDelta: {x: 195.60187, y: 514.00006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &760675178
 CanvasRenderer:
@@ -82635,10 +82635,10 @@ RectTransform:
   m_Father: {fileID: 1819409668}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 25}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.5, y: 0.52}
+  m_AnchorMax: {x: 0.5, y: 0.52}
+  m_AnchoredPosition: {x: 5, y: 25}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1621550198
 MonoBehaviour:
@@ -82660,8 +82660,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b27691cb4ea8d7c4fb66ec1053fe3ce5, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8ca522579152a2f48a9ee9d2fc6bba03, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -82693,7 +82693,6 @@ MonoBehaviour:
   toolName: 
   toolID: 2
   toolDescription: You can use this to trill the grass!
-  newCursor: {fileID: 0}
 --- !u!114 &1621550201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82784,10 +82783,10 @@ RectTransform:
   m_Father: {fileID: 1819409668}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 75}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.5, y: 0.68}
+  m_AnchorMax: {x: 0.5, y: 0.68}
+  m_AnchoredPosition: {x: 5, y: 24.5}
+  m_SizeDelta: {x: 50, y: 49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1784905187
 MonoBehaviour:
@@ -82809,8 +82808,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b27691cb4ea8d7c4fb66ec1053fe3ce5, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 69d86894e2d709c41ac26be9b8ad1b16, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -82842,7 +82841,6 @@ MonoBehaviour:
   toolName: 
   toolID: 1
   toolDescription: You can use this to clear trees!
-  newCursor: {fileID: 0}
 --- !u!114 &1784905190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82925,10 +82923,10 @@ RectTransform:
   m_Father: {fileID: 760675177}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 14, y: 0}
-  m_SizeDelta: {x: 57.1403, y: -150}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 32, y: 0.35665894}
+  m_SizeDelta: {x: 94.132, y: -8.51333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1819409669
 MonoBehaviour:
@@ -83002,10 +83000,10 @@ RectTransform:
   m_Father: {fileID: 1819409668}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 125}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.5, y: 0.84}
+  m_AnchorMax: {x: 0.5, y: 0.84}
+  m_AnchoredPosition: {x: 5, y: 24.5}
+  m_SizeDelta: {x: 50, y: 49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1832174285
 MonoBehaviour:
@@ -83027,8 +83025,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b27691cb4ea8d7c4fb66ec1053fe3ce5, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 7aa05b1ea9764034cb0df9955b391082, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -83104,7 +83102,6 @@ MonoBehaviour:
   toolName: 
   toolID: 0
   toolDescription: You can use this to clear boulders!
-  newCursor: {fileID: 2800000, guid: 82ff72577988cdb4a95bd92f1d0bc129, type: 3}
 --- !u!1 &1955015637
 GameObject:
   m_ObjectHideFlags: 0
@@ -83239,10 +83236,10 @@ RectTransform:
   m_Father: {fileID: 1819409668}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.5, y: 0.2}
+  m_AnchorMax: {x: 0.5, y: 0.2}
+  m_AnchoredPosition: {x: 5, y: 25}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1960151241
 MonoBehaviour:
@@ -83264,8 +83261,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b27691cb4ea8d7c4fb66ec1053fe3ce5, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1ad43b422846a604ea49668c894374c7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -83297,7 +83294,6 @@ MonoBehaviour:
   toolName: 
   toolID: 4
   toolDescription: You can use this to water things!
-  newCursor: {fileID: 0}
 --- !u!114 &1960151244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83376,10 +83372,10 @@ RectTransform:
   m_Father: {fileID: 1819409668}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -125}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.5, y: 0.04}
+  m_AnchorMax: {x: 0.5, y: 0.04}
+  m_AnchoredPosition: {x: 5, y: 25}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1988650108
 MonoBehaviour:
@@ -83396,7 +83392,6 @@ MonoBehaviour:
   toolName: 
   toolID: 5
   toolDescription: You can use this to plant trees!
-  newCursor: {fileID: 0}
 --- !u!114 &1988650109
 MonoBehaviour:
   m_ObjectHideFlags: 0
