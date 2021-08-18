@@ -83397,7 +83397,7 @@ MonoBehaviour:
   toolName: 
   toolID: 5
   toolDescription: You can use this to plant trees!
-  newCursor: {fileID: 0}
+  newCursor: {fileID: 2800000, guid: 89abea304e15cbe4da3c813f8a5c99c4, type: 3}
 --- !u!114 &1988650109
 MonoBehaviour:
   m_ObjectHideFlags: 0
