@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 45334bb0dc7272b48a35b30552070eaa
+guid: 890d84bac6bbf20478373b3f4649b636
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -14,27 +14,11 @@ PluginImporter:
   - first:
       Any: 
     second:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      enabled: 1
-=======
       enabled: 0
->>>>>>> Stashed changes
-=======
-      enabled: 0
->>>>>>> Stashed changes
       settings: {}
   - first:
       Editor: Editor
     second:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      enabled: 0
-      settings:
-        DefaultValueInitialized: true
-=======
-=======
->>>>>>> Stashed changes
       enabled: 1
       settings:
         CPU: x86_64
@@ -44,10 +28,6 @@ PluginImporter:
     second:
       enabled: 1
       settings: {}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   userData: 
   assetBundleName: 
   assetBundleVariant: 

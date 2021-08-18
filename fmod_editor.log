@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002BF0C588808 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000021005675618 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,26 +16,36 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          : Ambience, Rural, Insects, Bee, Birds SND0510 (000002BF0EC7C888)
-[LOG] SoundI::release                          :     Ambience, Rural, Insects, Bee, Birds SND0510 (000002BF12FECF18)
-[LOG] SoundI::release                          :     Ambience, Rural, Insects, Bee, Birds SND0510 (000002BF2162ED38)
-[LOG] SoundI::release                          : Wind Base (Loop) (000002BF0EC7C6D8)
-[LOG] SoundI::release                          :     Wind Base (Loop) (000002BF12FEF2D8)
-[LOG] SoundI::release                          :     Wind Base (Loop) (000002BF2162E9D8)
-[LOG] SoundI::release                          : E.Guitar_Mastered_Rewild (000002BF128CDE58)
-[LOG] SoundI::release                          :     E.Guitar_Mastered_Rewild (000002BF3743CBC8)
-[LOG] SoundI::release                          :     E.Guitar_Mastered_Rewild (000002BFC6158F28)
-[LOG] SoundI::release                          : Drums_Mastered_Rewild (000002BF128CD948)
-[LOG] SoundI::release                          :     Drums_Mastered_Rewild (000002BF3743D588)
-[LOG] SoundI::release                          :     Drums_Mastered_Rewild (000002BFC6158D78)
-[LOG] SoundI::release                          : Dulcimer_Mastered_Rewild (000002BF128CDCA8)
-[LOG] SoundI::release                          :     Dulcimer_Mastered_Rewild (000002BF3743DC08)
-[LOG] SoundI::release                          :     Dulcimer_Mastered_Rewild (000002BFC6159288)
-[LOG] SoundI::release                          : Flute_Mastered_Rewild (000002BFC68928E8)
-[LOG] SoundI::release                          :     Flute_Mastered_Rewild (000002BF37438448)
-[LOG] SoundI::release                          :     Flute_Mastered_Rewild (000002BF13C20348)
+[LOG] SoundI::release                          : Birds, Songbird, Pigeon, Distant 1 SND1473 (0000021023551AB8)
+[LOG] SoundI::release                          :     Birds, Songbird, Pigeon, Distant 1 SND1473 (0000021004F2F1B8)
+[LOG] SoundI::release                          :     Birds, Songbird, Pigeon, Distant 1 SND1473 (0000021020668088)
+[LOG] SoundI::release                          : Wind Base (Loop) (0000021023551098)
+[LOG] SoundI::release                          :     Wind Base (Loop) (0000021004F2A558)
+[LOG] SoundI::release                          :     Wind Base (Loop) (0000021020668E08)
+[LOG] SoundI::release                          : E.Guitar_Mastered_Rewild (0000021023551E18)
+[LOG] SoundI::release                          :     E.Guitar_Mastered_Rewild (0000021004F2E318)
+[LOG] SoundI::release                          :     E.Guitar_Mastered_Rewild (0000021020668AA8)
+[LOG] SoundI::release                          : Drums_Mastered_Rewild (0000021023551C68)
+[LOG] SoundI::release                          :     Drums_Mastered_Rewild (000002100B09D418)
+[LOG] SoundI::release                          :     Drums_Mastered_Rewild (0000021020668C58)
+[LOG] SoundI::release                          : Dulcimer_Mastered_Rewild (00000210235513F8)
+[LOG] SoundI::release                          :     Dulcimer_Mastered_Rewild (000002100B09D278)
+[LOG] SoundI::release                          :     Dulcimer_Mastered_Rewild (00000210206688F8)
+[LOG] SoundI::release                          : Flute_Mastered_Rewild (00000210960843B8)
+[LOG] SoundI::release                          :     Flute_Mastered_Rewild (000002100B09DDD8)
+[LOG] SoundI::release                          :     Flute_Mastered_Rewild (00000210207742D8)
+[LOG] SoundI::release                          :  (000002102B1D84D8)
+[LOG] SoundI::release                          :     Clear6 (000002100B09C238)
+[LOG] SoundI::release                          :  (000002102B1D8D78)
+[LOG] SoundI::release                          :     Clear7 (000002100B09CA58)
+[LOG] SoundI::release                          :  (000002102B1D8648)
+[LOG] SoundI::release                          :     Clear8 (000002100B09CD98)
+[LOG] SoundI::release                          :  (000002102B1D81F8)
+[LOG] SoundI::release                          :     Clear1 (000002100B09CBF8)
+[LOG] SoundI::release                          :  (0000020FD74CCFF8)
+[LOG] SoundI::release                          :     Clear2 (000002100B09D0D8)
+[LOG] SoundI::release                          :  (000002102B1D87B8)
+[LOG] SoundI::release                          :     Clear3 (000002100B09CF38)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -46,17 +56,3 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
-<<<<<<< Updated upstream
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
-=======
->>>>>>> Stashed changes

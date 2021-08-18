@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:Assets/Plugins/FMOD/lib/mac/fmodstudioL.bundle/Contents/MacOS/fmodstudioL.meta
-guid: 31dc02b47c971384dbc98ee7de9d20a7
-=======
-guid: f0f1856c718144c4fb4031a04c331f8a
->>>>>>> Stashed changes:Assets/Plugins/FMOD/lib/mac/fmodstudio.bundle/Contents/_CodeSignature/CodeResources.meta
-=======
-guid: 31dc02b47c971384dbc98ee7de9d20a7
->>>>>>> Stashed changes
+guid: 09e83130a0345eb48b24483f325daf7b
 DefaultImporter:
   externalObjects: {}
   userData: 
