@@ -26,8 +26,15 @@ public class SaveClass
     }
     public void Load()
     {
-        string jsonString = File.ReadAllText(savePath);
-        timeRemaining = JsonUtility.FromJson<SaveClass>(jsonString).timeRemaining;
+        if(File.Exists(savePath))
+        {
+            string jsonString = File.ReadAllText(savePath);
+            timeRemaining = JsonUtility.FromJson<SaveClass>(jsonString).timeRemaining;
+        }
+        else
+        {
+            timeRemaining = 50000f;
+        }
     }
 }
 public class TimeManager : MonoBehaviour
