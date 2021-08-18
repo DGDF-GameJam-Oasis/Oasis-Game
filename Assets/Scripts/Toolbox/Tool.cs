@@ -33,7 +33,7 @@ public class Tool : MonoBehaviour
     {
         Toolbox.toolboxInstance.SetActiveTool((Toolbox.Tools) toolID, this);
         //Set to Selected Color
-        gameObject.GetComponent<Image>().color = new Color32(114,238,111,255);
+        gameObject.GetComponent<Image>().color = new Color32(207,255,206,255);
     }
     public void DeselectTool()
     {
