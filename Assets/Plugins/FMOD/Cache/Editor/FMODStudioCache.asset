@@ -39,7 +39,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -397613112630726723}
+  - {fileID: 1081023097495071213}
   MinDistance: 1
   MaxDistance: 20
   Length: 86500
@@ -62,7 +62,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2053703987217285183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
   - {fileID: 549962252565476420}
   StringsBanks:
   - {fileID: 1973258996352425014}
-  stringsBankWriteTime: 637648983817015198
+  stringsBankWriteTime: 637649227342739290
   cacheVersion: 6
 --- !u!114 &131328056749058767
 MonoBehaviour:
@@ -220,9 +220,49 @@ MonoBehaviour:
   Path: Assets/Audio/Build/Desktop/Master.bank
   Name: Build/Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637648983816985197
+  lastModified: 637649227342719274
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &1081023097495071213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &1318472487698718301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &1453205481843567125
 MonoBehaviour:
@@ -244,7 +284,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -2567357407473847772}
+  - {fileID: 1318472487698718301}
   MinDistance: 0
   MaxDistance: 0
   Length: 91437
@@ -286,7 +326,7 @@ MonoBehaviour:
   Path: Assets/Audio/Build/Desktop/Master.strings.bank
   Name: Build/Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637648983817015198
+  lastModified: 637649227342739290
   LoadResult: 0
   FileSizes:
   - Name: 
