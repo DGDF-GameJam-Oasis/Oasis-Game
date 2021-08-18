@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Debris : MonoBehaviour
 {
-
     //Variables
-    string debrisName;
-    int debrisID;
-    string debrisDesc;
+    public string debrisName;
+    public int requiredToolID;
+    public string debrisDesc;
 
     public float fadeOutSpeed = 0.8f;
     private bool fadedOut = false;
@@ -31,6 +30,12 @@ public class Debris : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if((int) Toolbox.toolboxInstance.activeTool != requiredToolID)
+        {
+            //Display wrong tool prompt
+            Debug.Log("Wrong Tool!");
+            return;
+        }
         cleared = true;
     }
 
