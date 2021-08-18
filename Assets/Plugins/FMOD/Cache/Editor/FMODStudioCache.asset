@@ -100,7 +100,7 @@ MonoBehaviour:
   Path: Assets/Audio/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637648983817015198
+  lastModified: 637649299330607888
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -126,7 +126,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -2074712728029381138}
+  - {fileID: 2509821747558297890}
   MinDistance: 0
   MaxDistance: 0
   Length: 91437
@@ -311,7 +311,7 @@ MonoBehaviour:
   - {fileID: 851791751805363356}
   StringsBanks:
   - {fileID: -6395049720563180455}
-  stringsBankWriteTime: 637648983817015198
+  stringsBankWriteTime: 637649299330607888
   cacheVersion: 6
 --- !u!114 &130006456357155692
 MonoBehaviour:
@@ -393,9 +393,29 @@ MonoBehaviour:
   Path: Assets/Audio/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637648983816985197
+  lastModified: 637649299330597888
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &1021915917958167869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &1081023097495071213
 MonoBehaviour:
@@ -551,6 +571,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 175
+--- !u!114 &2509821747558297890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3143174766053273692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,7 +813,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -6901762214374667504}
+  - {fileID: 1021915917958167869}
   MinDistance: 1
   MaxDistance: 20
   Length: 86500

@@ -81872,6 +81872,7 @@ MonoBehaviour:
   toolName: 
   toolID: 3
   toolDescription: You can use this to plant grass!
+  newCursor: {fileID: 2800000, guid: 5a48f1a26019a384cacdf9a667f8acd9, type: 3}
 --- !u!114 &711982366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82693,6 +82694,7 @@ MonoBehaviour:
   toolName: 
   toolID: 2
   toolDescription: You can use this to trill the grass!
+  newCursor: {fileID: 2800000, guid: 054f4855bfbc79949b162a51d27e0488, type: 3}
 --- !u!114 &1621550201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82841,6 +82843,7 @@ MonoBehaviour:
   toolName: 
   toolID: 1
   toolDescription: You can use this to clear trees!
+  newCursor: {fileID: 2800000, guid: 47b0b78d15ffea04ab0e8da9b61f79c5, type: 3}
 --- !u!114 &1784905190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83102,6 +83105,7 @@ MonoBehaviour:
   toolName: 
   toolID: 0
   toolDescription: You can use this to clear boulders!
+  newCursor: {fileID: 2800000, guid: 75df4f80c843bc342a16580706d96a15, type: 3}
 --- !u!1 &1955015637
 GameObject:
   m_ObjectHideFlags: 0
@@ -83294,6 +83298,7 @@ MonoBehaviour:
   toolName: 
   toolID: 4
   toolDescription: You can use this to water things!
+  newCursor: {fileID: 2800000, guid: 013192770295bd840967aaca34b5c5d9, type: 3}
 --- !u!114 &1960151244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83392,6 +83397,7 @@ MonoBehaviour:
   toolName: 
   toolID: 5
   toolDescription: You can use this to plant trees!
+  newCursor: {fileID: 0}
 --- !u!114 &1988650109
 MonoBehaviour:
   m_ObjectHideFlags: 0
