@@ -44,5 +44,29 @@ public class NPCBehavior : MonoBehaviour
         Debug.Log(missionText.name + ":" + missionText.missionStartDialogue);
         Debug.Log(missionText.name + ":" + missionText.missionCompleteDialogue);
         Debug.Log(missionText.name + ":" + missionText.missionFailedDialogue);
+
+        paragraphs.Clear();
+
+        foreach(string paragraph in missionText.paragraphs)
+        {
+            paragraphs.Enqueue(paragraph);
+        }
+
+        void DisplayNextMessage()
+        {
+            if(paragraphs.Count == 0)
+            {
+                EndDialogue();
+                return;
+            }
+
+            string paragraph = paragraphs.Dequeue();
+            Debug.Log(paragraph);
+        }
+
+        void EndDialogue()
+        {
+            Debug.Log(missionText.missionCompleteDialogue);
+        }
     }
 }
