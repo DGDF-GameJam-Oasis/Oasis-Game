@@ -11,11 +11,15 @@
 // this free asset :-)
 
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class MonetizedMode : MonoBehaviour
-{    public float premiumMode = 5f;
+{    
+    public float premiumMode = 5f;
     public float normalMode = 1f;
+
+    public Text monetizationCounter;
     // register one or both events if you want to use them
     void OnEnable()
     {
@@ -67,5 +71,7 @@ public class MonetizedMode : MonoBehaviour
         // Debug.Log("MonetizationProgress amount " + amountAsLong + ", assetCode: " + assetCode + ", scale: " + scale);
 
         // Debug.Log("MonetizationProgress");
-    }
+        monetizationCounter.text =  detail["amount"] as string;
+        
+    }   
 }
