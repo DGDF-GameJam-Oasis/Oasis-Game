@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelTwo : MonoBehaviour
+public class Seeds : MonoBehaviour
 {
-    public static LevelTwo instance;
+    public static Seeds instance;
 
     private void Awake() 
     {
@@ -19,6 +19,7 @@ public class LevelTwo : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class Debris : MonoBehaviour
 {
@@ -35,7 +36,10 @@ public class Debris : MonoBehaviour
             ClearDebris();
         }
     }
-
+    private void WetSeeds()
+    {
+        gameObject.GetComponent<SpriteRenderer>().color = new Color32(152,48,48,255);
+    }
     private void OnMouseDown()
     {
         if((int) Toolbox.toolboxInstance.activeTool != requiredToolID)
@@ -44,7 +48,38 @@ public class Debris : MonoBehaviour
             return;
         }
         clearSoundEvent.start();
-        cleared = true;
+        
+        if((int)Toolbox.toolboxInstance.activeTool == 3)
+        {
+            LevelOne.instance.toPlant--;
+            if(LevelOne.instance.toPlant <= 0)
+            {
+                requiredToolID = 4;
+            }
+        }
+        if((int)Toolbox.toolboxInstance.activeTool == 4)
+        {
+            WetSeeds();
+            LevelOne.instance.toWater--;
+            if(LevelOne.instance.toWater <= 0)
+            {
+                LevelOne.instance.Deactivate();
+                LevelTwo.instance.Activate();
+                GameController.gameControllerInstance.UpdateLevel1();
+            }
+
+        }
+        if((int)Toolbox.toolboxInstance.activeTool == 0 || (int)Toolbox.toolboxInstance.activeTool == 1)
+        {
+            cleared = true;
+            LevelOne.instance.toClear--;
+            Debug.Log(LevelOne.instance.toClear);
+            if(LevelOne.instance.toClear <= 0)
+            {
+                Seeds.instance.Activate();
+                CompleteTask.instance.UpdateMenu();
+            }
+        }
     }
 
     private void ClearDebris()
