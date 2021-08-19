@@ -31,7 +31,6 @@ public class SlowDownButtonBehaviour : MonoBehaviour
     public void EnableButton()
     {
         buttonState = MonetizationStatus.instance.currentStatus;
-        Debug.Log("Enabling Button");
         btn = gameObject.GetComponent<Button>();
         ColorBlock cb = btn.colors;
         cb.pressedColor = new Color32(0,255,0,255);
@@ -42,7 +41,6 @@ public class SlowDownButtonBehaviour : MonoBehaviour
         if(!buttonState){return;}
         if(onoff)
         {
-            Debug.Log("premium!");
             TimeManager.instance.AdjustTimeRate(MonetizedMode.premiumMode);
             ColorBlock cb = btn.colors;
             cb.selectedColor = new Color32(0,255,0,255);
@@ -50,7 +48,6 @@ public class SlowDownButtonBehaviour : MonoBehaviour
         }
         else
         {
-            Debug.Log("Non Premium");
             TimeManager.instance.AdjustTimeRate(MonetizedMode.normalMode);
             ColorBlock cb = btn.colors;
             cb.selectedColor = new Color32(255,255,255,255);
