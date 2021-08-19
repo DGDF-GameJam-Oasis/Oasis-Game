@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectSound: event:/UI/Clear Debris
+  incorrectSound: event:/UI/Mistake
   debrisName: 
   requiredToolID: 0
   debrisDesc: 

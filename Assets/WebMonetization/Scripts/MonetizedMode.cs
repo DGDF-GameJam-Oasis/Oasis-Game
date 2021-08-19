@@ -54,6 +54,7 @@ public class MonetizedMode : MonoBehaviour
 
         // Debug.Log("MonetizationStart");
         TimeManager.instance.AdjustTimeRate(premiumMode);
+        MonetizationStatus.instance.SetOnLogo();
     }
 
     // A monetization progress event should occur roughly every two seconds after the monetization progress occurs
@@ -71,7 +72,9 @@ public class MonetizedMode : MonoBehaviour
         // Debug.Log("MonetizationProgress amount " + amountAsLong + ", assetCode: " + assetCode + ", scale: " + scale);
 
         // Debug.Log("MonetizationProgress");
-        monetizationCounter.text =  detail["amount"] as string;
+            Debug.Log(detail["amount"]);
+        
+        monetizationCounter.text =  (detail["amount"] as string) + "USD";
         
     }   
 }

@@ -7,7 +7,10 @@ public class Debris : MonoBehaviour
     //Variables
     [FMODUnity.EventRef]
     public string selectSound;
-    FMOD.Studio.EventInstance soundEvent;
+     [FMODUnity.EventRef]
+    public string incorrectSound;
+    FMOD.Studio.EventInstance clearSoundEvent;
+    FMOD.Studio.EventInstance incorrectSoundEvent;
     public string debrisName;
     public int requiredToolID;
     public string debrisDesc;
@@ -20,7 +23,9 @@ public class Debris : MonoBehaviour
     void Start()
     {
         Debug.Log("Create  Event");
-        soundEvent = FMODUnity.RuntimeManager.CreateInstance(selectSound);
+        clearSoundEvent = FMODUnity.RuntimeManager.CreateInstance(selectSound);
+        incorrectSoundEvent = FMODUnity.RuntimeManager.CreateInstance(incorrectSound);
+
     }
 
     // Update is called once per frame
@@ -30,24 +35,16 @@ public class Debris : MonoBehaviour
         {
             ClearDebris();
         }
-        int position;
-        soundEvent.getTimelinePosition(out position);
-        if(position >= 400)
-        {
-            soundEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        }
     }
 
     private void OnMouseDown()
     {
         if((int) Toolbox.toolboxInstance.activeTool != requiredToolID)
         {
-            //Display wrong tool prompt
-            Debug.Log("Wrong Tool!");
+            incorrectSoundEvent.start();
             return;
         }
-        soundEvent.start();
-        // Playsound();
+        clearSoundEvent.start();
         cleared = true;
     }
 
@@ -64,14 +61,10 @@ public class Debris : MonoBehaviour
             if (objectColor.a <= 0)
             {
                 fadedOut = true;
-                soundEvent.release();
-                soundEvent.clearHandle();
+                clearSoundEvent.release();
+                clearSoundEvent.clearHandle();
                 Destroy(gameObject);
             }
         }
-    }
-    void SetVariables()
-    {
-
     }
 }
