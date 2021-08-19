@@ -47,9 +47,15 @@ TagManager:
   - name: Elevation
     uniqueID: 3922470357
     locked: 0
-  - name: Debris
-    uniqueID: 3379426747
-    locked: 0
   - name: Grass Elevation
     uniqueID: 180971451
+    locked: 0
+  - name: Elevation 2
+    uniqueID: 3899064305
+    locked: 0
+  - name: Grass Elevation 2
+    uniqueID: 2353853851
+    locked: 0
+  - name: Debris
+    uniqueID: 3379426747
     locked: 0
