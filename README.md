@@ -70,7 +70,7 @@ Game Developers
 Virtual Exchange. The individual members are:
 - [Felipe Larrocha](https://www.linkedin.com/in/felipe-larrocha-2a64b3125), Producer & 2D-Artist.
 - [Callum Moscovitch](https://www.instagram.com/ravenswild/?hl=en), 2D-artist. 
-- [Aslı Karayel](https://twitter.com/aslikarayell?lang=en), Composer & Audio Designer.
+- [Aslı Karayel](https://www.linkedin.com/in/asl%C4%B1-karayel-bb7074218), Composer & Audio Designer.
 - [Mido Kalash](https://www.linkedin.com/in/mido-kalash-a33340215/), Producer & Game Designer.
 - [Ahmed Hamad](https://www.linkedin.com/in/ahmedhamad-okkio/), Gameplay Programmer.
 - [Kenneth E. Norris](https://www.linkedin.com/in/kenneth-e-norris/), Gameplay Programmer.
