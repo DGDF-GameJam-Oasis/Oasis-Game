@@ -167,7 +167,7 @@ especially:
   - Nika Nour, from the IGDA-F.
   - Sarah Spiers, from the IGDA-F.
  
-Last not least we would like to thank:
+- Last not least we would like to thank:
   - The Grant for the Web. 
   - Sandra "Maxi" Molina for suggesting to us that we should add voice lines in the game.
   - Aslı's mom for providing the voicelines.
