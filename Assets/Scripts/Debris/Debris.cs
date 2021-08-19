@@ -22,7 +22,6 @@ public class Debris : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Create  Event");
         clearSoundEvent = FMODUnity.RuntimeManager.CreateInstance(selectSound);
         incorrectSoundEvent = FMODUnity.RuntimeManager.CreateInstance(incorrectSound);
 

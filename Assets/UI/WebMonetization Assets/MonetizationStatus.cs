@@ -15,9 +15,16 @@ public class MonetizationStatus : MonoBehaviour
     private void Awake() 
     {
         instance = this;
+        currentStatus = false;
+    }
+    public void EnableFeatures()
+    {
+        currentStatus = true;
+        SlowDownButtonBehaviour.instance.EnableButton();
     }
     void Start()
     { 
+        
     }
     public void SetOnLogo()
     {

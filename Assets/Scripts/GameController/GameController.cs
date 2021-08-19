@@ -15,10 +15,6 @@ public class GameController : MonoBehaviour
     void Start()
     {
         TimeManager.instance.BeginTimer();
-        CountdownTimer.instance.BeginCountdown(40f);
-        // GetComponent<MonetizedMode>().enabled = false;
-
-        
     }
 
     // Update is called once per frame

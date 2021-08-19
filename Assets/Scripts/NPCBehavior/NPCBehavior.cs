@@ -52,21 +52,21 @@ public class NPCBehavior : MonoBehaviour
             paragraphs.Enqueue(paragraph);
         }
 
-        void DisplayNextMessage()
-        {
-            if(paragraphs.Count == 0)
-            {
-                EndDialogue();
-                return;
-            }
+        // void DisplayNextMessage()
+        // {
+        //     if(paragraphs.Count == 0)
+        //     {
+        //         EndDialogue();
+        //         return;
+        //     }
 
-            string paragraph = paragraphs.Dequeue();
-            Debug.Log(paragraph);
-        }
+        //     string paragraph = paragraphs.Dequeue();
+        //     Debug.Log(paragraph);
+        // }
 
-        void EndDialogue()
-        {
-            Debug.Log(missionText.missionCompleteDialogue);
-        }
+        // void EndDialogue()
+        // {
+        //     Debug.Log(missionText.missionCompleteDialogue);
+        // }
     }
 }
