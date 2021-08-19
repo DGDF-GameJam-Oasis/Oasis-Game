@@ -16,8 +16,8 @@ using UnityEngine;
 
 public class MonetizedMode : MonoBehaviour
 {    
-    public static float premiumMode = 5f;
-    public static float normalMode = 1f;
+    public static float premiumMode = 0.5f;
+    public static float normalMode = 2f;
 
     public Text monetizationCounter;
     // register one or both events if you want to use them
@@ -51,7 +51,6 @@ public class MonetizedMode : MonoBehaviour
         // Debug.Log("MonetizationStart requestId: " + requestId + ", id: " + id + ", resolvedEndpoint: " + resolvedEndpoint + ", metaContent" + metaContent);
 
         // Debug.Log("MonetizationStart");
-
         MonetizationStatus.instance.EnableFeatures();
         MonetizationStatus.instance.SetOnLogo();
     }

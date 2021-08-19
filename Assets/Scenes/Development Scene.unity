@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paymentPointer: $ilp.uphold.com/kN2KHpqhNFiM
-  simulateMonetization: 0
+  simulateMonetization: 1
 --- !u!1 &90507689
 GameObject:
   m_ObjectHideFlags: 0
@@ -84167,8 +84167,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.120000005, y: 0.3933222}
   m_AnchorMax: {x: 0.34500003, y: 0.6}
-  m_AnchoredPosition: {x: 36.6, y: 0.5}
-  m_SizeDelta: {x: 0, y: -1}
+  m_AnchoredPosition: {x: 41.930412, y: 0.5}
+  m_SizeDelta: {x: 10.6608, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2014020132
 MonoBehaviour:
@@ -84203,7 +84203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MONEY
+  m_Text: NO PREMIUM
 --- !u!222 &2014020133
 CanvasRenderer:
   m_ObjectHideFlags: 0
