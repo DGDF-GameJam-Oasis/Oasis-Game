@@ -1,22 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class MissionPopup : MonoBehaviour
 {
+    [FMODUnity.EventRef]
+    public string openSound;
+     [FMODUnity.EventRef]
+    public string closeSound;
+    FMOD.Studio.EventInstance openSoundEvent;
+    FMOD.Studio.EventInstance closeSoundEvent;
+
     public GameObject popUpBox;
     public Animator animator;
-    public TMP_Text popUpText1;
-    public TMP_Text popUpText2;
-    public TMP_Text popUpText3;
-
-    public void PopUp(string text, string text2, string text3)
+    private bool menuState;
+    // public TMP_Text popUpText1;
+    // public TMP_Text popUpText2;
+    // public TMP_Text popUpText3;
+    void Start()
     {
-        popUpBox.SetActive(true);
-        popUpText1.text = text;
-        popUpText2.text = text2;
-        popUpText3.text = text3;
+        openSoundEvent = FMODUnity.RuntimeManager.CreateInstance(openSound);
+        closeSoundEvent = FMODUnity.RuntimeManager.CreateInstance(closeSound);
+    }
+
+    public void CloseMenu()
+    {
+        closeSoundEvent.start();
+        animator.SetTrigger("close");
+        gameObject.GetComponent<Button>().onClick.AddListener(OpenMenu);
+        gameObject.GetComponent<Button>().onClick.RemoveListener(CloseMenu);
+    }
+    public void OpenMenu()
+    {
+        openSoundEvent.start();
         animator.SetTrigger("pop");
+        gameObject.GetComponent<Button>().onClick.AddListener(CloseMenu);
+        gameObject.GetComponent<Button>().onClick.RemoveListener(OpenMenu);
+
     }
 }
