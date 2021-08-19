@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8903546367407856178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8393536969467178057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +162,7 @@ MonoBehaviour:
   Path: Assets/Audio/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637649880429875787
+  lastModified: 637649910867106022
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -168,7 +188,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -525309350589159559}
+  - {fileID: -60602254671624424}
   MinDistance: 0
   MaxDistance: 0
   Length: 91437
@@ -428,6 +448,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3834
+--- !u!114 &-60602254671624424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Level
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,7 +503,7 @@ MonoBehaviour:
   - {fileID: 851791751805363356}
   StringsBanks:
   - {fileID: -6395049720563180455}
-  stringsBankWriteTime: 637649880429875787
+  stringsBankWriteTime: 637649910867106022
   cacheVersion: 6
 --- !u!114 &130006456357155692
 MonoBehaviour:
@@ -568,7 +608,7 @@ MonoBehaviour:
   Path: Assets/Audio/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637649880422869059
+  lastModified: 637649910867085994
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1090,7 +1130,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -2682086178692650130}
+  - {fileID: -8903546367407856178}
   MinDistance: 1
   MaxDistance: 20
   Length: 86500

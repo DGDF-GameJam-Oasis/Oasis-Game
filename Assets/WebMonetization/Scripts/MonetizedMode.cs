@@ -16,14 +16,13 @@ using UnityEngine;
 
 public class MonetizedMode : MonoBehaviour
 {    
-    public float premiumMode = 5f;
-    public float normalMode = 1f;
+    public static float premiumMode = 5f;
+    public static float normalMode = 1f;
 
     public Text monetizationCounter;
     // register one or both events if you want to use them
     void OnEnable()
     {
-        Debug.Log("Enabling");
         WMBroadcaster.OnMonetizationStart += OnMonetizationStart;
         WMBroadcaster.OnMonetizationProgress += OnMonetizationProgress;
     }
@@ -31,7 +30,6 @@ public class MonetizedMode : MonoBehaviour
     // unregister events that you've registered
     void OnDisable()
     {
-        Debug.Log("Disabling");
         WMBroadcaster.OnMonetizationStart -= OnMonetizationStart;
         WMBroadcaster.OnMonetizationProgress -= OnMonetizationProgress;
 
@@ -53,7 +51,8 @@ public class MonetizedMode : MonoBehaviour
         // Debug.Log("MonetizationStart requestId: " + requestId + ", id: " + id + ", resolvedEndpoint: " + resolvedEndpoint + ", metaContent" + metaContent);
 
         // Debug.Log("MonetizationStart");
-        TimeManager.instance.AdjustTimeRate(premiumMode);
+
+        MonetizationStatus.instance.EnableFeatures();
         MonetizationStatus.instance.SetOnLogo();
     }
 
@@ -72,7 +71,6 @@ public class MonetizedMode : MonoBehaviour
         // Debug.Log("MonetizationProgress amount " + amountAsLong + ", assetCode: " + assetCode + ", scale: " + scale);
 
         // Debug.Log("MonetizationProgress");
-            Debug.Log(detail["amount"]);
         
         monetizationCounter.text =  (detail["amount"] as string) + "USD";
         
