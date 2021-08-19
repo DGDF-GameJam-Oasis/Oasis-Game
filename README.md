@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
-  <!--Logo of the game here.--> <img src="https://imgur.com/a/i5f2VBA" alt="Project logo"></a>
+  <!--Logo of the game here.--> <img src="https://i.imgur.com/birL4sW.png" alt="Project logo"></a>
 </p>
 <h3 align="center">DGDF Game Marmalade Submission: ReWild</h3>
 
