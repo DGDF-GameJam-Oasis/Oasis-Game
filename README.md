@@ -68,12 +68,12 @@ idea of monetization, specifically in the context of web monetization protocols.
 Team ReWild consists of a handful of ragtag scholars from the IGDA Foundation's Diverse
 Game Developers
 Virtual Exchange. The individual members are:
-- [Felipe Larrocha](https://www.linkedin.com/in/felipe-larrocha-2a64b3125) Felipe Larrocha, Producer & 2D-Artist.
-- [Callum Moscovitch](https://www.instagram.com/ravenswild/?hl=en) Callum Moscovitch, 2D-artist. 
-- [Aslı Karayel](https://twitter.com/aslikarayell?lang=en) Aslı Karayel, Composer & Audio Designer.
-- [Mido Kalash](https://www.linkedin.com/in/mido-kalash-a33340215/) Mido Kalash, Producer & Game Designer.
-- [Ahmed Hamad](https://www.linkedin.com/in/ahmedhamad-okkio/) Ahmed Hamad, Gameplay Programmer.
-- [Kenneth E. Norris](https://www.linkedin.com/in/kenneth-e-norris/) Kenneth E. Norris, Gameplay Programmer.
+- [Felipe Larrocha](https://www.linkedin.com/in/felipe-larrocha-2a64b3125), Producer & 2D-Artist.
+- [Callum Moscovitch](https://www.instagram.com/ravenswild/?hl=en), 2D-artist. 
+- [Aslı Karayel](https://twitter.com/aslikarayell?lang=en), Composer & Audio Designer.
+- [Mido Kalash](https://www.linkedin.com/in/mido-kalash-a33340215/), Producer & Game Designer.
+- [Ahmed Hamad](https://www.linkedin.com/in/ahmedhamad-okkio/), Gameplay Programmer.
+- [Kenneth E. Norris](https://www.linkedin.com/in/kenneth-e-norris/), Gameplay Programmer.
 
 ## 💡 Our Game & Goal <a name = "idea"></a>
 
