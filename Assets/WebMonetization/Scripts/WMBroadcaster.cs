@@ -78,7 +78,7 @@ public class WMBroadcaster : MonoBehaviour
 
     public void StartSimulation()
     {
-        // Debug.Log("Starting Simulation");
+        Debug.Log("Starting Simulation");
         if (!isSimulating)
         {
             StartCoroutine(SimulateEventsCoroutine());
@@ -89,12 +89,12 @@ public class WMBroadcaster : MonoBehaviour
 
     IEnumerator SimulateEventsCoroutine()
     {
-        // Debug.Log("Simulating Monetization Start");
+        Debug.Log("Simulating Monetization Start");
         monetizationstart(_simulatedStartDetail);
 
         while (true)
         {
-            // Debug.Log("Simulating Monetization Progress");
+            Debug.Log("Simulating Monetization Progress");
             monetizationprogress(_simulatedProgressDetail);
             yield return new WaitForSeconds(2f);
         }

@@ -52,15 +52,14 @@ public class Debris : MonoBehaviour
         if((int)Toolbox.toolboxInstance.activeTool == 3)
         {
             LevelOne.instance.toPlant--;
-            if(LevelOne.instance.toPlant <= 0)
-            {
-                requiredToolID = 4;
-            }
+            requiredToolID = 4;
+        
         }
         if((int)Toolbox.toolboxInstance.activeTool == 4)
         {
             WetSeeds();
             LevelOne.instance.toWater--;
+            requiredToolID = 10;
             if(LevelOne.instance.toWater <= 0)
             {
                 LevelOne.instance.Deactivate();

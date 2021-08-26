@@ -12,6 +12,7 @@
 
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System;
 using UnityEngine;
 
 public class MonetizedMode : MonoBehaviour
@@ -19,6 +20,7 @@ public class MonetizedMode : MonoBehaviour
     public static float premiumMode = 0.5f;
     public static float normalMode = 2f;
 
+    public long TotalAmount;
     public Text monetizationCounter;
     // register one or both events if you want to use them
     void OnEnable()
@@ -62,16 +64,17 @@ public class MonetizedMode : MonoBehaviour
         // recommended: wrap parsing of each of these values in a try/catch in case the spec changes.
         // https://coil.com/docs/#browser-progress
         
-        // string amount = detail["amount"] as string;
-        // long amountAsLong = Convert.ToInt64(amount);
-        // string assetCode = detail["assetCode"] as string;
-        // long scale = (long) detail["assetScale"];
+        string amount = detail["amount"] as string;
+        long amountAsLong = Convert.ToInt64(amount);
+        string assetCode = detail["assetCode"] as string;
+        long scale = (long) detail["assetScale"];
         
         // Debug.Log("MonetizationProgress amount " + amountAsLong + ", assetCode: " + assetCode + ", scale: " + scale);
 
         // Debug.Log("MonetizationProgress");
+        TotalAmount+= amountAsLong;
         
-        monetizationCounter.text =  (detail["amount"] as string) + "USD";
+        monetizationCounter.text =  (TotalAmount*Math.Pow(10,-scale)).ToString() + assetCode;
         
     }   
 }

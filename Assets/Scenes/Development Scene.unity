@@ -8062,8 +8062,8 @@ GameObject:
   - component: {fileID: 85842615}
   - component: {fileID: 85842614}
   - component: {fileID: 85842613}
-  - component: {fileID: 85842618}
   - component: {fileID: 85842617}
+  - component: {fileID: 85842616}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -8112,20 +8112,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &85842617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85842612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9d7772e175f4f3eab46ce25f8a2057, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monetizationCounter: {fileID: 2014020132}
---- !u!114 &85842618
+--- !u!114 &85842616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8138,7 +8125,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paymentPointer: $ilp.uphold.com/kN2KHpqhNFiM
-  simulateMonetization: 1
+  simulateMonetization: 0
+--- !u!114 &85842617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85842612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9d7772e175f4f3eab46ce25f8a2057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalAmount: 0
+  monetizationCounter: {fileID: 2014020132}
 --- !u!1001 &93999337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64052,7 +64053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246587262}
   m_LocalRotation: {x: -0, y: -0, z: 0.20047063, w: 0.97969973}
-  m_LocalPosition: {x: -7.88, y: 3.55, z: 0}
+  m_LocalPosition: {x: -6.82, y: 3.66, z: 0}
   m_LocalScale: {x: -0.549405, y: 0.6399, z: 0.6399}
   m_Children: []
   m_Father: {fileID: 233332027}
@@ -99535,7 +99536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.21253881, y: 0.4}
   m_AnchorMax: {x: 0.4631552, y: 0.6}
-  m_AnchoredPosition: {x: -0.06958008, y: 0}
+  m_AnchoredPosition: {x: 0.33041, y: -0.000005722046}
   m_SizeDelta: {x: 0.66080093, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2014020132
@@ -99560,10 +99561,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e28e8352368c5dd4d8d2ecff2f4d8c03, type: 3}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0

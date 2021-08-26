@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
         FMODUnity.StudioEventEmitter[] components = GameObject.FindObjectsOfType<FMODUnity.StudioEventEmitter>();
         foreach (FMODUnity.StudioEventEmitter Emitter in components)
         {
-            Emitter.SetParameter("Level",1);
+            Emitter.SetParameter("Level",2);
         }
     }
     // Update is called once per frame

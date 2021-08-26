@@ -50,7 +50,7 @@ mergeInto(LibraryManager.library, {
             if (document.monetization){
 
                 function sendMessageToWebMonetizationBroadcaster(fnName, detail){
-                    unityInstance.SendMessage('WebMonetizationBroadcaster', fnName, JSON.stringify(detail));
+                    window.unityInstance.SendMessage('GameController', fnName, JSON.stringify(detail));
                 }
 
                 document.monetization.addEventListener('monetizationstart', function(event){
